@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an E-commerce Project for making Pozzby Express">
+    <title>E-commerce Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar starte here -->
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <un class="nav-upper flex-space-around">
+            <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__list"><a href="register.html" class="nav__link">Register</a></li>
+            <li class="nav__list"><a href="login.html" class="nav__link">Login</a></li>
+            <li class="nav__list"><a href="index.html" class="nav__link">Logout</a></li>
+            <li class="nav__list"><a href="contact.html" class="nav__link">Contact</a></li>
+            <li class="nav__list"><a href="profile.html" class="nav__link"><img class="profile-icon" src="Biplob.jpg" alt="profile-icon"></a></li>
+        </un>
+        <un class="nav-lower flex-space-around">
+            <li class="nav__brand nav__list"><a href="index.html" class="nav__link"> <img class="logo" src="pozzby-300x240@2x copy.png" alt="logo">ozzby Express</a></li>
+            <li class="nav__list"><a href="cart.html" class="nav__link"> <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span> Cart 2 Product $250.35</a></li>
+        </un>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- contact start here -->
+    <main>
+        <section class="contact-section">
+            <h2 class="section-title text-center">Contact Us</h2>
+            <div class="contact-container flex-center">
+                <form action="" class="form card">
+                    <div class="form-control flex-center">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required autocomplete="name">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" required autocomplete="email">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="about">Message</label>
+                        <textarea name="about" id="about" ></textarea>
+                    </div>
+                    <div class="form-control flex-center">
+                        <button type="submit" class="btn contact-button">Submit</button>
+                    </div>
+                </form>
+                
+                <div class="contact-address flex-space-around">
+                    <address>
+                        <h3>Address:</h3>
+                        <p>24/18, Block-F, Bizli Moholla, Mohammadpur, Dhaka-1207.</p>
+                        <br>
+                        <span>Call:</span>
+                        <a href="tel:+8801638220439">+880 1638-22 04 39</a>
+                    </address>
+                    <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.356420540516!2d90.35851017537246!3d23.770319088011227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1b0fbdd071f%3A0x547ba474e51f6b61!2sBIZLI%20MOHOLLA!5e0!3m2!1sbn!2sbd!4v1684056365872!5m2!1sbn!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- contact ends here -->
+
+    <!-- footer start here -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="Subscribe">Subscribe to newsletter:</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder="Your Email Address">
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Copyright 2023 Pozzby Express. All right reserved</p>
+        </div>
+    </footer>
+    <!-- footer ends here -->
+    <script src="index.js"></script>
+</body>
+</html>

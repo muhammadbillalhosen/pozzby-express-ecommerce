@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an E-commerce Project for making Pozzby Express">
+    <title>E-commerce Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar starte here -->
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <un class="nav-upper flex-space-around">
+            <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__list"><a href="register.html" class="nav__link">Register</a></li>
+            <li class="nav__list"><a href="login.html" class="nav__link">Login</a></li>
+            <li class="nav__list"><a href="index.html" class="nav__link">Logout</a></li>
+            <li class="nav__list"><a href="contact.html" class="nav__link">Contact</a></li>
+            <li class="nav__list"><a href="profile.html" class="nav__link"><img class="profile-icon" src="Biplob.jpg" alt="profile-icon"></a></li>
+        </un>
+        <un class="nav-lower flex-space-around">
+            <li class="nav__brand nav__list"><a href="index.html" class="nav__link"> <img class="logo" src="pozzby-300x240@2x copy.png" alt="logo">ozzby Express</a></li>
+            <li class="nav__list"><a href="cart.html" class="nav__link"> <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span> Cart 2 Product $250.35</a></li>
+        </un>
+    </nav>
+    <!-- navbar ends here -->
+
+<!-- header starte here -->
+    <header class="header">
+        <div class="banner flex-space-around">
+            <marquee class="banner__title" behavior="" direction="">60% Sales Going on</marquee>
+        </div>
+        <div class="features flex-space-around">
+            <article class="feature flex-center">
+                <i class="fa-solid fa-truck feature__icon"></i>
+                <h3>Shipping within 7 Days</h3>
+            </article>
+            <article class="feature flex-center">
+                <i class="fa-brands fa-rocketchat feature__icon"></i>
+                <h3>Support 24/7</h3>
+            </article>
+            <article class="feature flex-center">
+                <i class="fa-regular fa-credit-card feature__icon"></i>
+                <h3>Safe Payment</h3>
+            </article>
+        </div>
+    </header>
+<!-- header ends here -->
+
+<!-- main section starte here -->
+    <main class="flex-center">
+        <div class="sidebar">
+            <section class="categories-section">
+                <h3 class="section-title">Categories</h3>
+                    <ul class="list">
+                        <li class="list__item">
+                            <label for="tablet">
+                                <input type="checkbox" name="tablet" id="tablet" value="tablet">
+                                Tablet
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="Television">
+                                <input type="checkbox" name="Television" id="Television" value="Television">
+                                Television
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="Computer">
+                                <input type="checkbox" name="Computer" id="Computer" value="Computer">
+                                Computer
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="Laptop">
+                                <input type="checkbox" name="Laptop" id="Laptop" value="Laptop">
+                                Laptop
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="Mobile">
+                                <input type="checkbox" name="Mobile" id="Mobile" value="Mobile">
+                                Mobile
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="Watch">
+                                <input type="checkbox" name="Watch" id="Watch" value="Watch">
+                                Watch
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="Headphone">
+                                <input type="checkbox" name="Headphone" id="Headphone" value="Headphone">
+                                Headphone
+                            </label>
+                        </li>
+                    </ul>
+            </section>
+
+            <section class="price-section">
+                <h3 class="section-title">Price Range</h3>
+                    <ul class="list">
+                        <li class="list__item">
+                            <label for="price1">
+                                <input type="radio" name="price" id="price1" value="[0,20]">
+                                $0-$20
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="price2">
+                                <input type="radio" name="price" id="price2" value="[21,50]">
+                                $21-$50
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="price3">
+                                <input type="radio" name="price" id="price3" value="[51,100]">
+                                $51-$100
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="price4">
+                                <input type="radio" name="price" id="price4" value="[101,500]">
+                                $101-$500
+                            </label>
+                        </li>
+                    </ul>
+            </section>
+
+            <section class="Shipping-section">
+                <h3 class="section-title">Shipping Option</h3>
+                    <ul class="list">
+                        <li class="list__item">
+                            <label for="free">
+                                <input type="radio" name="free" id="free" value="free">
+                                Free Shipping
+                            </label>
+                        </li>
+                        <li class="list__item">
+                            <label for="paid">
+                                <input type="radio" name="paid" id="paid" value="paid">
+                                Paid Shipping
+                            </label>
+                        </li>
+                    </ul>
+            </section>
+        </div>
+        <div class="main-content">
+            <section class="actions flex-space-around">
+                <div class="actions__sort">
+                    <label for="sort">Sort By:</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most Sold First</option>
+                        <option value="rating">Most Rated First</option>
+                        <option value="Price">Cheapest First</option>
+                        <option value="arrival">Newest First</option>
+                        <option value="discount">Biggest DiscountFirst</option>
+                    </select>
+                </div>
+                <div class="actions__search">
+                    <input type="text" placeholder="Search Product">
+                    <button class="btn">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </section>
+
+<!-- product section starte here -->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product__img" src="tablet-1.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple iPad 10.2 inch 9th Gen 64GB Wi-Fi Space Gray (MK2K3ZP/A)</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            Apple iPad 10.2 inch comes with 9th Gen Wiâ€‘Fi in Space Gray color. It comes with 64GB capacity. All at an incredible value. 
+                            This new Apple iPad comes with a Glass front, aluminum back, aluminum frame....... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$899.99</h4>
+                        <p class="product__rating">Rating: 4.8/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>8 in stock</span>
+                        <hr class="hr-design">
+                        <span>14 sold</span>
+                    </div>
+                    <img class="product__img" src="tablet-2.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple iPad Mini 6th Gen 8.3-inch 64GB Wi-Fi Space Gray (MK7M3)</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple iPad Mini 6th Gen is powered chip makes by the A15 Bionic chip. The chip makes new A15 Bionic chip makes iPad mini just as powerful as it is portable. 
+                            It comes with a chip makes capacity of 64GB....... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$999.99</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>10 in stock</span>
+                        <hr class="hr-design">
+                        <span>19 sold</span>
+                    </div>
+                    <img class="product__img" src="tablet-3.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple iPad Pro 2021 MHNG3ZP/A 12.9 Inch Wi-Fi 128GB - Silver</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The ultimate iPad experience. Now with breakthrough M1 performance, a breathtaking XDR display. Buckle up. With M1, iPad Pro is the    
+                            nextâ€‘level performance and custom technologies like the advanced ...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$1299.99</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>6 in stock</span>
+                        <hr class="hr-design">
+                        <span>15 sold</span>
+                    </div>
+                    <img class="product__img" src="television-1.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Starex 17NB 17" Wide LED Television</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            Starex 17NB 17" Full HD Wide LED Television featured with 17 inch (Wide) Display Resulation: 1920 x 1080 LED contrast Ratio: 
+                            VGA and HDMI Smart Enargy Saving. The Starex 17NB 17" Wide LED Television ...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$399.99</h4>
+                        <p class="product__rating">Rating: 4.8/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>9 in stock</span>
+                        <hr class="hr-design">
+                        <span>13 sold</span>
+                    </div>
+                    <img class="product__img" src="television-2.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Smart SEL-24L22KS 24" HD Basic LED Television</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Smart SEL-24L22KS Television comes with a 32" HD (1366 x 768), LED display. It is a slim and attractive television. 
+                            Its design blends into any current decor and enriches the style without overpowering it....... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$1299.99</h4>
+                        <p class="product__rating">Rating: 4.8/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>7 in stock</span>
+                        <hr class="hr-design">
+                        <span>11 sold</span>
+                    </div>
+                    <img class="product__img" src="television-3.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Smart SEL-32SV22KS 32" Voice Control Android LED Television</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Smart SEL-32SV22KS Voice Control Android LED TV is an overall very good-performing Television. This TV offers HD visuals for 
+                            a more immersive viewing experience. You will also be able to enjoy the...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$1099.99</h4>
+                        <p class="product__rating">Rating: 4.8/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>17 in stock</span>
+                        <hr class="hr-design">
+                        <span>23 sold</span>
+                    </div>
+                    <img class="product__img" src="computer-1.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">AMD Ryzen 5 5600G Special Black Build Desktop PC</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            This Special Black Build Desktop PC consists of high-quality components designed to deliver reliable and efficient performance. 
+                            It comes with the AMD Ryzen 5 5600G Processor with Radeon...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$1899.99</h4>
+                        <p class="product__rating">Rating: 4.8/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>25 in stock</span>
+                        <hr class="hr-design">
+                        <span>43 sold</span>
+                    </div>
+                    <img class="product__img" src="computer-2.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Asus PN40 Celeron Dual Core Mini PC With Touch Monitor</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Asus PN40 Celeron Dual Core Mini PC With Touch Monitor is a compact and efficient computer system comprised of a powerful 
+                            Asus PN40 Celeron Dual Core Mini PC and a high-quality ASUS...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$1999.99</h4>
+                        <p class="product__rating">Rating: 4.8/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>22 in stock</span>
+                        <hr class="hr-design">
+                        <span>40 sold</span>
+                    </div>
+                    <img class="product__img" src="computer-3.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">AMD Ryzen 5 5600G Basic Video Editing Desktop PC</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The AMD Ryzen 5 5600G Basic Video Editing Build is a powerful and feature-rich computer that offers high-end performance 
+                            and speed. The system is powered by the AMD Ryzen 5 5600G Processor...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$1499.99</h4>
+                        <p class="product__rating">Rating: 4.8/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>10 in stock</span>
+                        <hr class="hr-design">
+                        <span>14 sold</span>
+                    </div>
+                    <img class="product__img" src="laptop-1.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple MacBook Pro 13.3-Inch Retina Display M2 Chip 8GB RAM 256GB SSD Space Gray (MNEH3)</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple MacBook Pro 13.3-Inch laptop is powered by the new M2 chip. It is loaded with 8GB RAM and 256GB SSD. 
+                            The MacBook Pro features a brilliant Retina display, a FaceTime HD camera, and mics....... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$2000</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>12 in stock</span>
+                        <hr class="hr-design">
+                        <span>25 sold</span>
+                    </div>
+                    <img class="product__img" src="laptop-2.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple MacBook Pro 13.3-Inch Retina Display M2 Chip 8GB RAM 256GB SSD Silver (MNEP3)</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple MacBook Pro 13.3-Inch laptop is powered by the new M2 chip. It is loaded with 8GB RAM and 256GB SSD. 
+                            The MacBook Pro features a brilliant Retina display, a FaceTime HD camera, and mics....... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$2200</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>24 in stock</span>
+                        <hr class="hr-design">
+                        <span>45 sold</span>
+                    </div>
+                    <img class="product__img" src="laptop-3.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple MacBook Pro 13.3-Inch Retina Display M2 Chip 8GB RAM 512GB SSD Space Gray (MNEJ3)</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple MacBook Pro 13.3-Inch laptop is powered by the new M2 chip. It comes with the same compact design but now it 
+                            supports up to 20 hours of battery life and an active cooling system to sustain enhanced....... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$2200</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>25 in stock</span>
+                        <hr class="hr-design">
+                        <span>38 sold</span>
+                    </div>
+                    <img class="product__img" src="I-phone-1.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple iPhone 14 128GB Purple (Singapore)</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple iPhone 14 is the latest model of the iPhone series, featuring the latest technology and advanced features that are designed 
+                            to provide users with a seamless and unparalleled mobile experience. The device....... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$1290</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>21 in stock</span>
+                        <hr class="hr-design">
+                        <span>32 sold</span>
+                    </div>
+                    <img class="product__img" src="I-phone-2.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple iPhone 14 Plus 128GB Purple (Singapore)</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple iPhone 14 is the latest model of the iPhone series, featuring the latest technology and advanced features that are designed to 
+                            provide users with a seamless and unparalleled mobile experience. The device...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$1390</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>19 in stock</span>
+                        <hr class="hr-design">
+                        <span>26 sold</span>
+                    </div>
+                    <img class="product__img" src="I-phone-3.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple iPhone 14 Pro Max 256GB Deep Purple (USA)</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple iPhone 14 is the latest model of the iPhone series, featuring the latest technology and advanced features that are designed to 
+                            provide users with a seamless and unparalleled mobile experience. The device...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$1590</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>22 in stock</span>
+                        <hr class="hr-design">
+                        <span>37 sold</span>
+                    </div>
+                    <img class="product__img" src="watch-1.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple Watch Series 8 45mm Midnight Aluminum Case Sport Band</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple Watch Series 8 45mm Sports Band features the largest, most advanced display yet. It comes with an always-On Retina LTPO OLED 
+                            display, 1,000 nits brightness. The display is Crack Resistant, Dust Resistant...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$590</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>13 in stock</span>
+                        <hr class="hr-design">
+                        <span>22 sold</span>
+                    </div>
+                    <img class="product__img" src="watch-2.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple Watch Series 7 45mm Nike Edition Sports Band</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple Watch Series 8 45mm Sports Band features the largest, most advanced display yet. It comes with an always-On Retina LTPO OLED 
+                            display, 1,000 nits brightness. The display is the largest Crack Resistant, Dust Resistant...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$790</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>28 in stock</span>
+                        <hr class="hr-design">
+                        <span>37 sold</span>
+                    </div>
+                    <img class="product__img" src="watch-3.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple Watch Series 6 (M00H3CH/A) 44mm Sport Band (Black)</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple Watch Series 8 45mm Sports Band features the largest, most advanced display yet. It comes with an always-On Retina LTPO OLED 
+                            display, 1,000 nits brightness. The display is Crack Resistant, Dust Resistant...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$990</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>45 in stock</span>
+                        <hr class="hr-design">
+                        <span>58 sold</span>
+                    </div>
+                    <img class="product__img" src="Headphone-1.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Apple Watch Series 6 (M00H3CH/A) 44mm Sport Band (Black)</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple Watch Series 8 45mm Sports Band features the largest, most advanced display yet. It comes with an always-On Retina LTPO OLED 
+                            display, 1,000 nits brightness. The display is Crack Resistant, Dust Resistant...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$250</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>25 in stock</span>
+                        <hr class="hr-design">
+                        <span>34 sold</span>
+                    </div>
+                    <img class="product__img" src="Headphone-2.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Astrum HS750 USB Headset With Mic</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple Watch Series 8 45mm Sports Band features the largest, most advanced display yet. It comes with an always-On Retina LTPO OLED 
+                            display, 1,000 nits is Crack Resistant, brightness. The display is Crack Resistant, Dust Resistant...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$380</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>32 in stock</span>
+                        <hr class="hr-design">
+                        <span>49 sold</span>
+                    </div>
+                    <img class="product__img" src="Headphone-3.jpg" alt="tablet">
+                    <div class="product__body">
+                        <h3 class="product__name">Astrum HS130 Wired PC Gaming Headset with Mic</h3>
+                        <p>
+                            <span class="dot blue"></span>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            The Apple Watch Series 8 45mm Sports Band features the largest, most advanced display yet. It comes with an always-On Retina LTPO OLED 
+                            display, 1,000 is Crack Resistant, nits brightness. The display is Crack Resistant, Dust Resistant...... <a href="Product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product__price">$590</h4>
+                        <p class="product__rating">Rating: 4.9/5</p>
+                        <button class="btn product__button">AddTo Cart</button>
+                    </div>
+                </article>
+            </section>
+<!-- product section ends here -->
+        </div>
+    </main>
+<!-- main section ends here -->
+
+
+    <!-- footer start here -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="Subscribe">Subscribe to newsletter:</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder="Your Email Address">
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Copyright 2023 Pozzby Express. All right reserved</p>
+        </div>
+    </footer>
+    <!-- footer ends here -->
+    <script src="index.js"></script>
+</body>
+</html>
